@@ -1,9 +1,9 @@
-function formatMessage(message,maxLength){
-    if(message<=maxLength){
+function formatMessage(message, maxLength) {
+    if (message.length <= maxLength) {
         return message;
     }
-    else{
-        `${message.slice(0,maxLength)}...`;
+    else {
+        return `${message.slice(0, maxLength)}...`;
     }
 }
 
